@@ -13,7 +13,7 @@
     <img src="https://cdn2.iconfinder.com/data/icons/blue-bits-basic-and-bonus/256/011.png" alt="Que país é esse?">
 
     <form action="" class="search">
-      <input id="searchInput" type="search" class="search-input" placeholder="Entre com o nome do país em inglês">
+      <input id="searchInput" type="text" class="search-input" placeholder="Entre com o nome do país em inglês">
       <button onclick="grabCountry(countryName)" id="searchButton" class="search-button">Que país é esse?</button>
     </form>
 
@@ -21,21 +21,7 @@
     </section>
     <span class="error">Não encontrado</span>
   </main>
-
-<script> 
-var countryName;
-var resultado;
-
-function grabCountry(urlendpoint, countryName, endpointfields) {
-countryName = document.getElementById('searchInput').value;
-var urlendpoint = 'https://restcountries.eu/rest/v2/name/';
-var endpointfields = '?fields=topLevelDomain;alpha3Code;callingCodes;altSpellings;subregion;population;latlng;languages;flag';
-fetch(urlendpoint + countryName + endpointfields, { method: 'GET' })
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(err => console.log(err.message))
-}
-</script> 
-
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="scripts.js"></script> 
 </body>
 </html>
