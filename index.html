@@ -14,10 +14,28 @@
 
     <form action="" class="search">
       <input id="searchInput" type="text" class="search-input" placeholder="Entre com o nome do país em inglês">
-      <button onclick="grabCountry(countryName)" id="searchButton" class="search-button">Que país é esse?</button>
+      <button onclick="grabCountry()" id="searchButton" class="search-button">Que país é esse?</button>
     </form>
 
-    <section class="resultado">
+    <section class="Resultado">
+      <body onload="grabCountry()">
+      <img src=data.flag>
+      <br>
+      <p>Nome nativo: <span id="altSpellings"></span></p>
+      <br>
+      <p>Sigla: <span id="alpha3Code"></span></p>
+      <br>
+      <p>Idioma: <span id="language"></span></p>
+      <br>
+      <p>Região: <span id="subregion"></span></p>
+      <br>
+      <p>Domínio predominante: <span id="topLevelDomain"></span></p>
+      <br>
+      <p>Latitude, longitude: <span id="latlng"></span></p>
+      <br>
+      <p>População: <span id="population"></span></p>
+      <br>
+      </body>
     </section>
     <span class="error">Não encontrado</span>
   </main>
