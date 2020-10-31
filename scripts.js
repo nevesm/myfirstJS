@@ -7,5 +7,6 @@ var endpointfields = '?fields=topLevelDomain;alpha3Code;callingCodes;altSpelling
 fetch(urlendpoint + countryName + endpointfields)
  .then(response => response.json())
  .then(data => console.log(data))
- .catch(console.log('Sem resposta da API'))
+document.getElementById("population").innerHTML = data.population;
 }
+
