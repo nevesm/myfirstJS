@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/543baf12-9a6e-4d04-8870-006d1ff35ce0/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/qualpais",
+    "appService.deploySubpath": "."
+}
