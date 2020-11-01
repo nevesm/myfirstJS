@@ -4,39 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href=""/>
+  <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/157933/isolated/preview/e1855ec756f425b054d7c567a57e95b2---cone-da-terra-escura-by-vexels.png"/>
   <link rel="stylesheet" href="style.css">
   <title>Que país é esse?</title>
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="script.js"></script> 
   <main class="container">
-    <img src="https://cdn2.iconfinder.com/data/icons/blue-bits-basic-and-bonus/256/011.png" alt="Que país é esse?">
+    <img src="https://images.vexels.com/media/users/3/157933/isolated/preview/e1855ec756f425b054d7c567a57e95b2---cone-da-terra-escura-by-vexels.png" width="250" height="250" alt="Que país é esse?">
 
     <form action="" class="search">
       <input id="searchInput" type="text" class="search-input" placeholder="Entre com o nome do país em inglês">
-      <button onclick="grabCountry()" id="searchButton" class="search-button">Que país é esse?</button>
+      <button id="searchButton" class="search-button" onclick="grabCountry()">Que país é esse?</button>
     </form>
 
     <section class="Resultado">
-      <br>
-      <p>Nome nativo: <span id="altSpellings"></span></p>
-      <br>
-      <p>Sigla: <span id="alpha3Code"></span></p>
-      <br>
-      <p>Idioma: <span id="language"></span></p>
-      <br>
-      <p>Região: <span id="subregion"></span></p>
-      <br>
-      <p>Domínio predominante: <span id="topLevelDomain"></span></p>
-      <br>
-      <p>Latitude, longitude: <span id="latlng"></span></p>
-      <br>
-      <p>População: <span id="population"></span></p>
-      <br>
     </section>
     <span class="error">Não encontrado</span>
   </main>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="scripts.js"></script> 
 </body>
 </html>
