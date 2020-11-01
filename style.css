@@ -1,56 +1,137 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+	line-height: 120px;
+	position: relative;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 
 /* Main CSS */
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
 
 body {
-  background-color: #1f2d77;
-  font-family: 'Maven Pro', sans-serif;
+	background-color: #FCFCFC;
+	font-family: "Maven Pro", sans-serif;
 }
-  
+
 .container {
   width: 100%;
   max-width: 800px;
@@ -69,7 +150,6 @@ body {
   padding: 1em 0;
 }
 
-
 .search .search-input,
 .search .search-button {
   border: 0;
@@ -81,13 +161,107 @@ body {
 }
 
 .search .search-button {
-  background-color: #2b75bb;
-  color: #fff;
-  cursor: pointer;
+	background-color: #09213D;
+	color: #fff;
+	cursor: pointer;
 }
-
 
 .error {
   display: none;
   font-size: 1.5em;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: #f2f2f2;*/
+  background-color: #fff;
+  opacity: 1;
+  color: white; 
+}
+
+.card .bandeira {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #FFC312;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.card .bandeira img {
+  width: 100%;
+}
+
+.card .country-info {
+  width: 100%;
+  background-color: #163f5e;
+  flex: 2;
+}
+
+.country-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.country-info .name,
+.country-info .languages,
+.country-info .subregion,
+.country-info .callingCodes,
+.country-info .population,
+.country-info .latlng {
+  width: fit-content;
+  padding: .5em .2em;
+  font-size: 1.7em;
+}
+
+.country-info .name {
+  font-size: 2.5em;
+  text-align: center;
+  color: #FFC312; 
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.country-info .languages,
+.country-info .subregion,
+.country-info .callingCodes,
+.country-info .population,
+.country-info .latlng {
+text-align: justify;
+font-size: 1em;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.fade {
+  animation: fadeEfect 4s;
+}
+
+@media(min-width: 758px) {
+  .card { 
+    flex-direction: row;  
+  }
+}
+
+@keyframes fadeEfect{
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

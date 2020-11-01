@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/157933/isolated/preview/e1855ec756f425b054d7c567a57e95b2---cone-da-terra-escura-by-vexels.png"/>
-  <link rel="stylesheet" href="style.css">
-  <title>Que país é esse?</title>
-</head>
-<body>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="script.js"></script> 
-  <main class="container">
-    <img src="https://images.vexels.com/media/users/3/157933/isolated/preview/e1855ec756f425b054d7c567a57e95b2---cone-da-terra-escura-by-vexels.png" width="250" height="250" alt="Que país é esse?">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://images.vexels.com/media/users/3/157933/isolated/preview/e1855ec756f425b054d7c567a57e95b2---cone-da-terra-escura-by-vexels.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Que país é esse?</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <main class="container"> <img
+        src="https://images.vexels.com/media/users/3/157933/isolated/preview/e1855ec756f425b054d7c567a57e95b2---cone-da-terra-escura-by-vexels.png"
+        width="250"
+        height="250"
+        alt="Que país é esse?"
+      />
 
-    <form action="" class="search">
-      <input id="searchInput" type="text" class="search-input" placeholder="Entre com o nome do país em inglês">
-      <button id="searchButton" class="search-button" onclick="grabCountry()">Que país é esse?</button>
-    </form>
-
-    <section class="Resultado">
-    </section>
-    <span class="error">Não encontrado</span>
-  </main>
-</body>
+      <form action="" class="search"> 
+        <input
+          id="searchInput"
+          type="text"
+          class="search-input"
+          placeholder="Entre com o nome do país em inglês"
+        />
+        <button id="searchButton" class="search-button" onclick="startFlow()">
+        <strong>Que país é esse? </strong> </button>
+      </form>
+      <section id="card">
+      
+      </section>
+      <span class="error">País não encontrado</span>
+    </main>
+  </body>
 </html>
